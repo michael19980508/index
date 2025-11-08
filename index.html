@@ -170,6 +170,20 @@
     </nav>
   </aside>
 
+  <script>
+  function loadPage(page) {
+    fetch(page)
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('mainContent').innerHTML = html;
+      })
+      .catch(err => {
+        document.getElementById('mainContent').innerHTML = "<p>載入失敗 😢</p>";
+      });
+  }
+</script>
+
+
   <!-- 主要內容 -->
   <main class="content">
     <div class="card">
