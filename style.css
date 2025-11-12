@@ -56,7 +56,6 @@ body {
 /* === 子項目（第二層） === */
 .sidebar nav ul ul li {
   color: #444;
-  cursor: default;
   transition: background 0.25s, color 0.25s;
 }
 
@@ -87,11 +86,13 @@ body {
   box-shadow: inset 0 0 6px rgba(233, 149, 60, 0.2);
 }
 
-/* 非連結項目（純文字） */
+/* 🚫 非連結項目（純文字） */
 .sidebar nav ul ul li:not(:has(a)) {
-  color: #888;
+  color: #aaa;
   padding: 6px 25px;
   font-style: italic;
+  text-decoration: underline dotted #ccc;
+  cursor: not-allowed;
 }
 
 /* === 主內容區 === */
@@ -120,7 +121,7 @@ body {
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
 }
 
-/* === 區塊樣式（內容分明化） === */
+/* === 區塊樣式 === */
 .section {
   padding: 18px 20px;
   border-radius: 12px;
@@ -129,7 +130,6 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
-/* 色系區塊 */
 .section.yellow {
   background: #fff7e5;
   border-left: 6px solid #e8953c;
