@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://taiwangoldfish.github.io/index/sitemap.xml
+Sitemap: https://taiwangoldfish.github.io/sitemap.xml
